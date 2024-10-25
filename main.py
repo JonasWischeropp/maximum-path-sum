@@ -24,6 +24,6 @@ def calculate_maximum_path_sum(layers: Triangle) -> int:
 
 
 if __name__ == "__main__":
-    layers = parse_triangle_file("triangle.txt")
-    maximum = calculate_maximum_path_sum(layers)
+    triangle = parse_triangle_file("triangle.txt")
+    maximum = calculate_maximum_path_sum(triangle)
     print(f"Maximum sum: {maximum}")
