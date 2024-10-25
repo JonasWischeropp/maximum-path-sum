@@ -9,8 +9,8 @@ def parse_triangle_file(file_name: str) -> Triangle:
             layers.append([int(number) for number in line.split(" ")])
     return layers
 
-def calculate_maximum_path_sum(layers: Triangle) -> int:
-    layer_iter = reversed(layers)
+def calculate_maximum_path_sum(triangle: Triangle) -> int:
+    layer_iter = reversed(triangle)
     try:
         # buffer to store intermediate results
         sums = next(layer_iter).copy()
