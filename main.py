@@ -3,7 +3,7 @@ type Triangle = list[list[int]]
 
 def parse_triangle_file(file_name: str) -> Triangle:
     """"Assumes that the file content is a valid triangle."""
-    layers: list[list[int]] = []
+    layers: Triangle = []
     with open(file_name) as file:
         for line in file:
             layers.append([int(number) for number in line.split(" ")])
